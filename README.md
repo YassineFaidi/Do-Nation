@@ -66,7 +66,7 @@ Do-Nation is designed to bridge the gap between charitable organizations and don
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/YassineFaidi/Do-Nation.git
    cd Do-Nation
    ```
 
