@@ -1,0 +1,32 @@
+.about-section {
+  padding: 120px 20px 40px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: start;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.underline {
+  width: 110px;
+  height: 5px;
+  background-color: #00b347;
+  margin-bottom: 20px;
+}
+
+.content {
+  font-size: 0.95rem;
+  color: #646464;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}

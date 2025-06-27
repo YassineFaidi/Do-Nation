@@ -1,0 +1,365 @@
+.event-page {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    padding: 120px 20px 40px;
+}
+
+.event-header {
+    background-image: url('./../assets/test_back_0.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    color: white;
+    padding: 100px 60px;
+    padding-bottom: 60px;
+    text-align: start;
+    border-radius: 20px;
+    margin-inline: 50px;
+    margin-block: 20px;
+}
+
+.event-header .header-content h1 {
+    text-align: start;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.event-header .header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #dedada;
+    width: 60%;
+}
+
+.join-button {
+    background-color: #00aced;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-radius: 10px;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.top-section {
+    display: flex;
+    width: 100%;
+    /* height: 250px; */
+}
+
+.event-description {
+    flex: 60%;
+    padding: 60px;
+    padding-left: 90px;
+    padding-bottom: 0;
+}
+
+.event-description h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+.event-description p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #9f9e9e;
+}
+
+.tags {
+    flex: 40%;
+    padding: 60px;
+    padding-bottom: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.tags h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    padding: 12px 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.bottom-section {
+    display: flex;
+    width: 100%;
+    /* height: 150px; */
+}
+
+.event-date {
+    flex: 60%;
+    padding: 60px;
+    padding-left: 90px;
+    padding-top: 15px;
+    background-color: #fff;
+}
+
+.event-date h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+.event-date p {
+    font-size: 1.2rem;
+    color: #9f9e9e;
+}
+
+.event-social-link {
+    flex: 40%;
+    padding: 60px;
+    /* padding-left: 90px; */
+    padding-top: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.event-social-link h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+#social-icons-id a{
+    color: #555;
+    font-size: 2.5rem;
+}
+
+
+/* Related Events Section */
+.related-events-section {
+    background-color: #f0f0f0;
+    /* Light gray background */
+    margin-top: 10px;
+    margin-inline: 40px;
+    padding-inline: 90px;
+    padding-block: 40px;
+    border-radius: 20px;
+}
+
+/* Grid for event cards */
+.related-events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three cards per row */
+    gap: 20px;
+}
+
+/* Event card styles */
+.related-event-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.related-event-card:hover {
+    transform: translateY(-5px);
+}
+
+.related-event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Event card info layout */
+.related-event-card-info {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.related-event-date {
+    flex-basis: 20%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4b0082;
+    display: flex;
+    flex-direction: column;
+}
+
+.related-event-details {
+    flex-basis: 80%;
+    padding-left: 10px;
+}
+
+.month {
+    margin-bottom: 15%;
+}
+
+.related-event-details h4 {
+    margin: 0 0 5px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.related-event-details p {
+    margin: 0;
+    font-size: 0.65rem;
+    color: #777;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .event-page {
+        padding-block: 100px;
+    }
+
+    .event-header {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .event-header .header-content h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .event-header .header-content p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .top-section {
+        flex-direction: column;
+        text-align: center;
+        text-align-last: center;
+    }
+
+    .event-description {
+        padding: 16px;
+    }
+
+    .tags {
+        padding: 10px;
+    }
+
+    .event-date {
+        padding: 16px;
+    }
+
+    .event-social-link {
+        padding: 16px;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tag-list {
+        justify-content: center;
+    }
+
+    .event-social-link {
+        align-items: center;
+    }
+
+    .related-events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .related-events-section {
+        margin-inline: 20px;
+        padding-inline: 40px;
+        padding-block: 20px;
+    }
+
+    .related-event-card-info {
+        padding: 10px;
+    }
+
+    .related-event-date {
+        font-size: 1rem;
+    }
+
+    .related-event-details h4 {
+        font-size: 0.75rem;
+    }
+
+    .related-event-details p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-page {
+        padding-block: 100px;
+    }
+
+    .event-header {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .event-header .header-content h1 {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+    .related-events-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .related-events-section {
+        margin-inline: 10px;
+        padding-inline: 0px;
+        padding-block: 10px;
+    }
+
+    .related-event-card {
+        margin-block: 5px;
+    }
+
+    .related-events-section h3{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .related-event-card-info {
+        padding: px;
+    }
+
+    .related-event-date {
+        font-size: 0.9rem;
+    }
+
+    .related-event-details h4 {
+        font-size: 0.7rem;
+    }
+
+    .related-event-details p {
+        font-size: 0.55rem;
+    }
+}

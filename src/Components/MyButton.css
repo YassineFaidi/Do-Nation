@@ -1,0 +1,69 @@
+#myBtn {
+    cursor: pointer;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.donate-btn-green,
+.donate-btn-blue {
+    border-radius: 25px;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.donate-btn-green {
+    background-color: #35ac3e;
+    border: 2px solid #35ac3e;
+}
+
+.donate-btn-blue {
+    background-color: #00bfff;
+    border: 2px solid #00bfff;
+}
+
+.learn-btn:hover {
+    transform: scale(1.05);
+}
+
+.donate-btn-green:hover,
+.donate-btn-blue:hover {
+    transform: scale(1.1);
+}
+
+.learn-btn {
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: transform 0.2s ease;
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+}
+
+.outline-btn:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+}
+
+
+@media (max-width: 480px) {
+
+    .donate-btn-green:hover,
+    .donate-btn-blue:hover {
+        transform: scale(1);
+    }
+
+    .learn-btn:hover {
+        transform: scale(1);
+    }
+}

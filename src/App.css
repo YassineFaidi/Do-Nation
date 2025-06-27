@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background: url('./assets/fadizaml.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
